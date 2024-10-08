@@ -40,7 +40,7 @@ def search_route(start, destination):
 
     dic = response.json()
 
-    # print(dic)
+    print(response.headers["X-RateLimit-Requests-Remaining"])
 
     distance = dic["summary"]["totalDistance"]
 
